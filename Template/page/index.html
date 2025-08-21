@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <h1>YouTube Comment Extractor</h1>
-        <form method="POST" action="{% url 'get_video_comments' %}">
+        <form method="POST" action="{% url 'get_video_comments' %}" autocomplete="off">
             {% csrf_token %}
             <input type="text" name="video_url" placeholder="Enter YouTube video URL" required>
             <button type="submit">Fetch Comments</button>
