@@ -6,9 +6,9 @@
 from django.shortcuts import render
 from django.views import View
 
-class WebScraping(View):
-    def get(self, request):
-        return render(request, 'home.html')
+# class WebScraping(View):
+#     def get(self, request):
+#         return render(request, 'home.html')
     
 
 from django.views import View
